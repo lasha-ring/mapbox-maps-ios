@@ -4,7 +4,7 @@ import UIKit
 
 final class MockUIApplication: UIApplicationProtocol {
     var statusBarOrientation: UIInterfaceOrientation = .unknown
-    private(set) var applicationState: UIApplication.State = .inactive
+    private(set) var applicationState: UIApplication.State = .active
     private(set) var preferredContentSizeCategory: UIContentSizeCategory = .unspecified
 
     let openURLStub = Stub<URL, Void>()
